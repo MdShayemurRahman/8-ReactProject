@@ -1,0 +1,28 @@
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem 3rem;
+  background-color: black;
+  color: whitesmoke;
+  border-bottom: 1px solid white;
+}
+
+nav div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+nav div h2 {
+  color: #2bb1d6;
+}
+
+img {
+  width: 50px;
+  margin-right: 1rem;
+}
+
+li {
+  list-style: none;
+}
