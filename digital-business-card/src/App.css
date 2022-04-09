@@ -12,11 +12,11 @@
 }
 
 .card-image {
-  width: 16rem;
+  width: 20rem;
 }
 
 .card-container {
-  width: 16rem;
+  width: 20rem;
   display: flex;
   align-items: center;
   flex-direction: column;
@@ -24,7 +24,7 @@
 }
 
 .info-name {
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 900;
   margin: 21px 0 0;
 }
