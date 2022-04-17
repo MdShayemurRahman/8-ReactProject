@@ -1,0 +1,38 @@
+.countries {
+  display: grid;
+  gap: 1rem;
+}
+
+img {
+  width: 150px;
+}
+
+input{
+    margin: 1rem 0;
+    padding: 0.5rem;
+    border-radius: 0.6rem;
+}
+
+.country {
+  background-color: #222;
+  color: white;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 600px) {
+  .countries {
+    grid-template-columns: auto auto;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .countries {
+    grid-template-columns: auto auto auto;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .countries {
+    grid-template-columns: auto auto auto auto;
+  }
+}
