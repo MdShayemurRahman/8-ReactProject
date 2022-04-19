@@ -2,12 +2,26 @@ import React from "react";
 import Card from "./components/Card";
 import contacts from "./contact";
 
+const createCard = (contact) => {
+  return (
+    <Card
+      key={contact.id}
+      name={contact.name}
+      image={contact.image}
+      tel={contact.tel}
+      email={contact.email}
+    />
+  );
+};
+
 const App = () => {
   return (
     <div>
       <h1 className="heading">My Contact</h1>
       <div className="card">
-        <Card
+        {contacts.map(createCard)}
+
+        {/* <Card
           name={contacts[0].name}
           image={contacts[0].image}
           tel={contacts[0].tel}
@@ -26,7 +40,7 @@ const App = () => {
           image={contacts[2].image}
           tel={contacts[2].tel}
           email={contacts[2].email}
-        />
+        /> */}
       </div>
     </div>
   );
