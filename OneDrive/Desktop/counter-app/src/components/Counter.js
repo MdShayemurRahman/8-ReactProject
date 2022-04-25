@@ -11,11 +11,11 @@ const Counter = () => {
     setCount(count - 1);
   };
   return (
-    <>
+    <div className="counter-app">
       <h1>{count}</h1>
       <button onClick={increaseCounter}>+</button>
       <button onClick={decreaseCounter}>-</button>
-    </>
+    </div>
   );
 }
 
