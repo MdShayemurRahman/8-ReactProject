@@ -1,13 +1,12 @@
 import React from "react";
 
 const NameApp = () => {
-  const [text, setText] = React.useState("");
-  const [headingText, setHeadingText] = React.useState("");
+  const [fName, setFName] = React.useState("");
+  const [lName, setLName] = React.useState("");
+
   const [isMouseOver, setMouseOver] = React.useState(false);
 
   const handleClick = (event) => {
-    setHeadingText(text);
-
     event.preventDefault();
   };
   const handleMouseOver = (isMouseOver) => {
@@ -18,18 +17,31 @@ const NameApp = () => {
     setMouseOver(false);
   };
 
-  const handleChange = (event) => {
-    setText(event.target.value);
+  const handleFNameChange = (event) => {
+    setFName(event.target.value);
+  };
+
+  const handleLNameChange = (event) => {
+    setLName(event.target.value);
   };
 
   return (
     <div className="container">
-      <h1>Hello, {headingText}</h1>
+      <h1>
+        Hello, {fName} {lName}
+      </h1>
       <form onSubmit={handleClick}>
         <input
-          onChange={handleChange}
-          type="text"
-          placeholder="What's your name?"
+          name="fName"
+          onChange={handleFNameChange}
+          placeholder="first name"
+          value={fName}
+        />
+        <input
+          name="lName"
+          onChange={handleLNameChange}
+          placeholder="last name"
+          value={lName}
         />
         <button
           type="submit"
