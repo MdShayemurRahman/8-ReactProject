@@ -1,0 +1,21 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+button {
+  width: 3.5rem;
+}
+
+.time-app,
+.counter-app {
+  margin: 2rem;
+  padding: 3rem;
+  border: 5px solid cyan;
+  background: #555;
+  color: cyan;
+  border-radius: 50%;
+  text-align: center;
+}
