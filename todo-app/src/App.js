@@ -20,10 +20,10 @@ function App() {
   };
 
   return (
-    <div>
-      <h1>Todo List</h1>
+    <div className="container">
+      <h1 className="App-title">Todo List</h1>
       <TodoForm addTodo={addTodo} />
-      <div className="container">
+      <div className="todo-container">
         {todos.map((todo) => {
           return <RenderTodo key={uuidv4()} todo={todo} />;
         })}

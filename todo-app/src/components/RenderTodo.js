@@ -2,7 +2,7 @@ import React from "react";
 
 const RenderTodo = (props) => {
   return (
-    <div className="todo-data">
+    <div className="row">
       <span>{props.todo.text}</span>
     </div>
   );

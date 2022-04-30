@@ -1,5 +1,6 @@
 import React from "react";
-import { Button, Form } from "react-bootstrap";
+import "font-awesome/css/font-awesome.min.css";
+
 
 const TodoForm = (props) => {
   const [value, setValue] = React.useState("");
@@ -11,17 +12,21 @@ const TodoForm = (props) => {
   };
 
   return (
-    <Form onSubmit={handleSubmit} className="">
+    <form onSubmit={handleSubmit} className="form">
       <input
         type="text"
-        name=""
+        name="todo-task"
         value={value}
+        placeholder=" Input Your Todo.."
         onChange={(e) => setValue(e.target.value)}
         className="form-input"
         required
       />
-      <Button type="submit"> + </Button>
-    </Form>
+      <button type="submit">
+        {" "}
+        <i className="fa fa-plus"></i>{" "}
+      </button>
+    </form>
   );
 };
 

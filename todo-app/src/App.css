@@ -1,8 +1,69 @@
-* {
+@import url(https://fonts.googleapis.com/css?family=Roboto:500,700);
+
+*, *::before, *::after {
   box-sizing: border-box;
 }
-body {
-  background-color: #222;
-  color: #fff;
+
+html {
+  min-height: 100%;
 }
 
+body {
+  margin: 20px;
+  color: #435757;
+  background: linear-gradient(-20deg, #d0b782 20%, #a0cecf 80%);
+  font: 500 1.2em/1.2 'Roboto', sans-serif;
+}
+
+.container {
+  max-width: 450px;
+  margin: 0 auto;
+  background-color: rgba(255, 255, 255, .3);
+  box-shadow: 0 0 20px rgba(0, 0, 0, .1);
+}
+
+.App-title {
+  border-top: 5px solid #435757;
+  border-bottom: 5px solid #435757;
+  margin: 0;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, .4);
+  font-size: 1.8em;
+  text-align: center;
+}
+
+.form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1.5rem;
+  background-color: rgba(232, 244, 250, .2);
+  border-bottom: 2px solid #435757;
+}
+
+.form-input {
+  display: block;
+  outline: none;
+  width: 100%;
+  font-size: 1.2rem;
+  margin: 0.5rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.form button {
+  padding: 5px;
+  width: 3rem;
+  border: none;
+  border-radius: 6px;
+}
+
+.form button:hover {
+  background-color: #B4FF9F;
+}
+
+.row {
+  padding-left: 2rem;
+  margin: 7px;
+  /* border-bottom: 1px solid #1A3C40;  */
+}
