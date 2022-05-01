@@ -1,15 +1,37 @@
+.App {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #777;
+  color: #fff;
+  height: 100vh;
+}
 .App-header {
   text-align: center;
 }
 
-.faq-content {
+.faq-container {
+  background-color: #222;
   color: #fff;
-  padding: 0.5rem 1rem;
+  padding: 0 1rem;
+  border: 2px solid;
   border-radius: 9px;
   margin: 1rem;
-  background-color: #333;
-  width: 500px;
+  width: 800px;
+}
+
+.faq {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  border-bottom: 1px solid;
+}
+
+.faq button {
+  width: 2rem;
+}
+
+.answer-content {
+  
+  font-size: 1.1rem;
 }
